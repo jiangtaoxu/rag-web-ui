@@ -17,5 +17,5 @@ COPY . .
 # Expose the port
 EXPOSE 3000
 
-# Start the development server, attention: this is for development, not for production
-CMD ["pnpm", "dev"]
+# Start the development server with host binding
+CMD ["pnpm", "dev", "--hostname", "0.0.0.0"]
