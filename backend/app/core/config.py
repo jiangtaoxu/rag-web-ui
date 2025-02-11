@@ -40,7 +40,7 @@ class Settings(BaseSettings):
     EMBEDDINGS_PROVIDER: str = os.getenv("EMBEDDINGS_PROVIDER", "openai")
 
     # MinIO settings
-    MINIO_ENDPOINT: str = os.getenv("MINIO_ENDPOINT", "localhost:9000")
+    MINIO_ENDPOINT: str = os.getenv("MINIO_ENDPOINT", "localhost:9010")
     MINIO_ACCESS_KEY: str = os.getenv("MINIO_ACCESS_KEY", "minioadmin")
     MINIO_SECRET_KEY: str = os.getenv("MINIO_SECRET_KEY", "minioadmin")
     MINIO_BUCKET_NAME: str = os.getenv("MINIO_BUCKET_NAME", "documents")
@@ -60,7 +60,7 @@ class Settings(BaseSettings):
     
     # Chroma DB settings
     CHROMA_DB_HOST: str = os.getenv("CHROMA_DB_HOST", "chromadb")
-    CHROMA_DB_PORT: int = int(os.getenv("CHROMA_DB_PORT", "8000"))
+    CHROMA_DB_PORT: int = int(os.getenv("CHROMA_DB_PORT", "8011"))
     
     # Qdrant DB settings
     QDRANT_URL: str = os.getenv("QDRANT_URL", "http://localhost:6333")
