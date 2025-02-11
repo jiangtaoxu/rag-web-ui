@@ -25,7 +25,7 @@ services:
       - ./frontend:/app
       - /app/node_modules
     environment:
-      - NEXT_PUBLIC_API_URL=http://localhost:8010
+      - NEXT_PUBLIC_API_URL=http://rag-web-ui-hnxxba-59a90c-132-226-114-206.traefik.me
     networks:
       - app_network
 
